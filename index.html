@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Talent</title>
+  <style>
+  body{
+ margin:0;
+ height:100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  background: linear-gradient(240deg, #00c6ff, #0072ff, #8e2de2, #4a00e0);
+  background-size: 600% 600%;
+  animation: bgmove 10s ease infinite;
+  }
+@keyframes bgmove{
+        0%{ background-position: 0% 50% }
+        50%{background-position: 100% 50%}
+        100%{ background-position: 0% 50%}
+}
+.intro-text{
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing:8px;
+  color: red;
+  font-family: arial sans-serif;
+  animation: netflixintro 3s ease forwards;
+}
+@keyframes netflixintro{
+  0%{
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  40%{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  70%{
+    transform: scale(1);
+  }
+  100%{
+    opacity: 1;
+  }
+ h1{
+    text-align: center;
+    color: blue;
+    font-family: arial;
+    font-size: 40px;
+ }
+  
+        
+    }
+  </style>  
+</head>
+<body>
+    <h1 class="intro-text">welcome to talent</h1>
+    <script>
+      setTimeout(function(){
+        window.location.href="home.html";
+      }, 3000);
+    </script>
+</body>
+</html>
